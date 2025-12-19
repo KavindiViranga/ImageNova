@@ -14,7 +14,7 @@ export const generateImage = async (req, res) =>{
         }
 
         if(user.creditBalance == 0 || userModel.creditBalance < 0){
-            return res.json({ success: false, message: 'No Credit Balance', creditBalabnce: user.creditBalance })
+            return res.json({ success: false, message: 'No Credit Balance', creditBalance: user.creditBalance })
         }
 
         const formData = new FormData()
