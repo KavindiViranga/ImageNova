@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import { assets } from '../assets/assets'
 import { AppContext } from '../context/AppContext'  
 // eslint-disable-next-line no-unused-vars
-import { motion } from 'motion/react'
+import { motion } from "framer-motion";
 import axios from 'axios'
 import { toast } from 'react-toastify'
 
@@ -44,6 +44,7 @@ const Login = () => {
                     localStorage.setItem('token', data.token)
                     setShowLogin(false)
                 }else{
+
                     toast.error(data.message)
                 }
 

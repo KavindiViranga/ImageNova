@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react'
 import { assets } from '../assets/assets'
 // eslint-disable-next-line no-unused-vars
-import { motion } from 'motion/react'
+import { motion } from 'framer-motion'
 import { AppContext } from '../context/AppContext'
 
 const Result = () => {
